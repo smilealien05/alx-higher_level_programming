@@ -2,4 +2,4 @@
 str = "Holberton School"
 tr = str * 3
 print(tr)
-print(str)
+print(str[:9])
