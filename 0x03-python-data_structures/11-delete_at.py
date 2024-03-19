@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-def print_matrix_integer(matrix=[[]]):
-    for row in matrix:
-        for col in row:
-            print("{:d}".format(col), end=" " if col != row[-1] else "")
-        print()
+def delete_at(my_list=[], idx=0):
+    if idx < 0 or idx > len(my_list) - 1:
+        return my_list
+    else:
+        del my_list[idx]
+    return my_list
