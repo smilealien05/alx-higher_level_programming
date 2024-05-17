@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Defines a function thet adds att. to obj."""
 
-def add_attribute(obje, attr, val):
+def add_attribute(obj, name, value):
     """adds a new attribute to an object if it’s possible
     Args:
         obje (any): the obj to add
