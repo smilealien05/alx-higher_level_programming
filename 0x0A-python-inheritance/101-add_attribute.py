@@ -10,6 +10,7 @@ def add_attribute(obje, attr, val):
     Raises:
         TypeError: if the attr cannot add
     """
-    if not hasattr(obje, "__dir__"):
+    if hasattr(obj, "__dict__"):
+        obj.__dict__[name] = value
+    else:
         raise TypeError("can't add new attribute")
-    setattr(obje, attr, val)
